@@ -10,3 +10,5 @@ data = pd.read_csv('atm_transactions.csv')
 # print(data.tail())
 
 print(data.info())
+
+print(data[['atmId', 'atmName', 'atmCity', 'totalBalance']])
