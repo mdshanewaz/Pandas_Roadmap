@@ -11,4 +11,9 @@ data = pd.read_csv('atm_transactions.csv')
 
 print(data.info())
 
-print(data[['atmId', 'atmName', 'atmCity', 'totalBalance']])
+df = data[['atmId', 'atmName', 'atmCity', 'totalBalance']]
+
+print(df)
+
+print(df.boxplot)
+
